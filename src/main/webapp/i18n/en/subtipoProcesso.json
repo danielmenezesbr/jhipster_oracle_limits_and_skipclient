@@ -1,0 +1,21 @@
+
+{
+    "jhipsterOracleLimitsAndSkipclientApp": {
+        "subtipoProcesso" : {
+            "home": {
+                "title": "Subtipo Processos",
+                "createLabel": "Create a new Subtipo Processo",
+                "createOrEditLabel": "Create or edit a Subtipo Processo"
+            },
+            "created": "A new Subtipo Processo is created with identifier {{ param }}",
+            "updated": "A Subtipo Processo is updated with identifier {{ param }}",
+            "deleted": "A Subtipo Processo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Subtipo Processo {{ id }}?"
+            },
+            "detail": {
+                "title": "Subtipo Processo"
+            }
+        }
+    }
+}

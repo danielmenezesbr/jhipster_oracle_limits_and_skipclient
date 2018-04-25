@@ -1,0 +1,20 @@
+entity NucleoEtapaSubtipoProcesso(ne_subtipoproc) {
+    posicao Integer required,
+    dataInicio LocalDate,
+    dataFim LocalDate,
+    status Boolean
+}
+
+entity SubtipoProcesso {
+
+}
+
+entity ABC {
+
+}
+
+relationship ManyToOne {
+    NucleoEtapaSubtipoProcesso{subtipoProcesso required}  to SubtipoProcesso
+}
+
+skipClient ABC

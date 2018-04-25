@@ -1,0 +1,26 @@
+
+{
+    "jhipsterOracleLimitsAndSkipclientApp": {
+        "nucleoEtapaSubtipoProcesso" : {
+            "home": {
+                "title": "Nucleo Etapa Subtipo Processos",
+                "createLabel": "Create a new Nucleo Etapa Subtipo Processo",
+                "createOrEditLabel": "Create or edit a Nucleo Etapa Subtipo Processo"
+            },
+            "created": "A new Nucleo Etapa Subtipo Processo is created with identifier {{ param }}",
+            "updated": "A Nucleo Etapa Subtipo Processo is updated with identifier {{ param }}",
+            "deleted": "A Nucleo Etapa Subtipo Processo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Nucleo Etapa Subtipo Processo {{ id }}?"
+            },
+            "detail": {
+                "title": "Nucleo Etapa Subtipo Processo"
+            },
+            "posicao": "Posicao",
+            "dataInicio": "Data Inicio",
+            "dataFim": "Data Fim",
+            "status": "Status",
+            "subtipoProcesso": "Subtipo Processo"
+        }
+    }
+}

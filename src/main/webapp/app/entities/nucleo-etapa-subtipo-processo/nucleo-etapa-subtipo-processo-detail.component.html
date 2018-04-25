@@ -1,0 +1,44 @@
+
+<div *ngIf="nucleoEtapaSubtipoProcesso">
+    <h2><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.detail.title">Nucleo Etapa Subtipo Processo</span> {{nucleoEtapaSubtipoProcesso.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.posicao">Posicao</span></dt>
+        <dd>
+            <span>{{nucleoEtapaSubtipoProcesso.posicao}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.dataInicio">Data Inicio</span></dt>
+        <dd>
+            <span>{{nucleoEtapaSubtipoProcesso.dataInicio | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.dataFim">Data Fim</span></dt>
+        <dd>
+            <span>{{nucleoEtapaSubtipoProcesso.dataFim | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.status">Status</span></dt>
+        <dd>
+            <span>{{nucleoEtapaSubtipoProcesso.status}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterOracleLimitsAndSkipclientApp.nucleoEtapaSubtipoProcesso.subtipoProcesso">Subtipo Processo</span></dt>
+        <dd>
+            <div *ngIf="nucleoEtapaSubtipoProcesso.subtipoProcesso">
+                <a [routerLink]="['/subtipo-processo', nucleoEtapaSubtipoProcesso.subtipoProcesso?.id]">{{nucleoEtapaSubtipoProcesso.subtipoProcesso?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'nucleo-etapa-subtipo-processo/'+ nucleoEtapaSubtipoProcesso.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>
